@@ -198,11 +198,11 @@
       <category term="android" scheme="http://lixxu.github.io/categories/android/"/>
     
     
+      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
+    
       <category term="mione" scheme="http://lixxu.github.io/tags/mione/"/>
     
       <category term="xiaomi" scheme="http://lixxu.github.io/tags/xiaomi/"/>
-    
-      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
     
   </entry>
   
@@ -227,9 +227,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
-    
       <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
       <category term="marrowmailer" scheme="http://lixxu.github.io/tags/marrowmailer/"/>
     
@@ -367,13 +367,13 @@
       <category term="android" scheme="http://lixxu.github.io/categories/android/"/>
     
     
-      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
-    
       <category term="android" scheme="http://lixxu.github.io/tags/android/"/>
     
       <category term="fastboot" scheme="http://lixxu.github.io/tags/fastboot/"/>
     
       <category term="recovery" scheme="http://lixxu.github.io/tags/recovery/"/>
+    
+      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
     
   </entry>
   
@@ -477,9 +477,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
-    
       <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
   </entry>
   
