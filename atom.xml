@@ -41,32 +41,6 @@
   </entry>
   
   <entry>
-    <title>时间过得真快</title>
-    <link href="http://lixxu.github.io/2017/11/20/time-goes-fast/"/>
-    <id>http://lixxu.github.io/2017/11/20/time-goes-fast/</id>
-    <published>2017-11-20T01:17:45.000Z</published>
-    <updated>2017-11-20T01:47:01.296Z</updated>
-    
-    <content type="html"><![CDATA[<p>不知不觉, 两年半多过去了, 感觉像是过去了半个世纪了.<br>虽然不想承认, 每周的来回还是影响到了工作效率.<br>虽然回家也只是聊作一点心理安慰, 但也有一点用处.<br>孩子跟我更亲了, 还有她也不至于忘了我, 时不时出现在她面前, 多少会加深一点印象的.</p><p>从之前学习 <code>sanic</code> 的兴致勃勃, 到现在的寡淡如水, 不知道怎会如此.</p><p>或许开发方向要做一些调整了:<br><code>sanic</code> 和 <code>vue.js</code> 貌似是个很好的组合, 既不会放下 <code>python</code>, 又能学习如今流行的<br><code>javascript</code> 前端, 将来也可以使用 <code>electron</code>.</p><p>我曾经有个计划, 把所有的功能都集中到一起, 现在才刚刚开始一小步, 进度太慢了啊.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;不知不觉, 两年半多过去了, 感觉像是过去了半个世纪了.&lt;br&gt;虽然不想承认, 每周的来回还是影响到了工作效率.&lt;br&gt;虽然回家也只是聊作一点心理安慰, 但也有一点用处.&lt;br&gt;孩子跟我更亲了, 还有她也不至于忘了我, 时不时出现在她面前, 多少会加深一点印象的.&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="other" scheme="http://lixxu.github.io/categories/other/"/>
-    
-    
-      <category term="other" scheme="http://lixxu.github.io/tags/other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>特殊的日子</title>
     <link href="http://lixxu.github.io/2017/11/14/special-days/"/>
     <id>http://lixxu.github.io/2017/11/14/special-days/</id>
@@ -191,9 +165,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="psutil" scheme="http://lixxu.github.io/tags/psutil/"/>
-    
       <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
+    
+      <category term="psutil" scheme="http://lixxu.github.io/tags/psutil/"/>
     
   </entry>
   
@@ -224,11 +198,11 @@
       <category term="android" scheme="http://lixxu.github.io/categories/android/"/>
     
     
-      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
-    
       <category term="mione" scheme="http://lixxu.github.io/tags/mione/"/>
     
       <category term="xiaomi" scheme="http://lixxu.github.io/tags/xiaomi/"/>
+    
+      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
     
   </entry>
   
@@ -393,13 +367,13 @@
       <category term="android" scheme="http://lixxu.github.io/categories/android/"/>
     
     
+      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
+    
       <category term="android" scheme="http://lixxu.github.io/tags/android/"/>
     
       <category term="fastboot" scheme="http://lixxu.github.io/tags/fastboot/"/>
     
       <category term="recovery" scheme="http://lixxu.github.io/tags/recovery/"/>
-    
-      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
     
   </entry>
   
@@ -503,9 +477,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
-    
       <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
   </entry>
   
@@ -563,6 +537,28 @@
       <category term="database" scheme="http://lixxu.github.io/tags/database/"/>
     
       <category term="pyodbc" scheme="http://lixxu.github.io/tags/pyodbc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime3 用户设置备份</title>
+    <link href="http://lixxu.github.io/2014/05/09/sublime-user-profile-backup/"/>
+    <id>http://lixxu.github.io/2014/05/09/sublime-user-profile-backup/</id>
+    <published>2014-05-09T00:54:27.000Z</published>
+    <updated>2017-11-20T01:47:01.296Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装的插件:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1. Alignment</span><br><span class="line">2. Autoprefixer</span><br><span class="line">3. PySide</span><br><span class="line">4. PyV8</span><br><span class="line">5. SublimeLinter</span><br><span class="line">6. SublimeTmpl</span><br><span class="line">7. Terminal</span><br><span class="line">8. Markdown Preview</span><br><span class="line">9. Markdown Editing</span><br><span class="line">10. SmartMarkdown</span><br><span class="line">11. Pretty YAML</span><br><span class="line">12. Python Flake8 Lint</span><br><span class="line">13. SideBarEnhancements</span><br><span class="line">14. SublimeCodeIntel</span><br><span class="line">15. Git Config</span><br><span class="line">16. GitStatus</span><br><span class="line">17. Gitignore</span><br><span class="line">18. Go to definition</span><br><span class="line">19. GoToLastEdit</span><br><span class="line">20. SublimeGit</span><br></pre></td></tr></table></figure></p><a id="more"></a><p>Sublime3062 Windows 用户设置备忘:</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"auto_complete_triggers"</span>:</span><br><span class="line">    [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"characters"</span>: <span class="string">" "</span>,</span><br><span class="line">            <span class="attr">"selector"</span>: <span class="string">"text.html"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"color_scheme"</span>: <span class="string">"Packages/User/Solarized (Light) (SL).tmTheme"</span>,</span><br><span class="line">    <span class="attr">"default_line_ending"</span>: <span class="string">"unix"</span>,</span><br><span class="line">    <span class="attr">"font_face"</span>: <span class="string">"Source Code Pro"</span>,</span><br><span class="line">    <span class="attr">"font_size"</span>: <span class="number">16</span>,</span><br><span class="line">    <span class="attr">"highlight_line"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"highlight_modified_tabs"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"ignored_packages"</span>:</span><br><span class="line">    [</span><br><span class="line">        <span class="string">"Theme - Nil"</span>,</span><br><span class="line">        <span class="string">"RestructuredText"</span>,</span><br><span class="line">        <span class="string">"GoSublime"</span>,</span><br><span class="line">        <span class="string">"BracketHighlighter"</span>,</span><br><span class="line">        <span class="string">"Vintage"</span>,</span><br><span class="line">        <span class="string">"Markdown"</span></span><br><span class="line">    ],</span><br><span class="line">    <span class="attr">"soda_classic_tabs"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"soda_folder_icons"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"fade_fold_buttons"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"tab_size"</span>: <span class="number">4</span>,</span><br><span class="line">    <span class="attr">"translate_tabs_to_spaces"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"trim_trailing_white_space_on_save"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"update_check"</span>: <span class="literal">false</span>,</span><br><span class="line">    <span class="attr">"word_wrap"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"show_encoding"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"show_line_endings"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"ensure_newline_at_eof_on_save"</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">"draw_white_space"</span>: <span class="string">"all"</span>,</span><br><span class="line">    <span class="attr">"always_show_minimap_viewport"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><!--more-->]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;安装的插件:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. Alignment&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. Autoprefixer&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. PySide&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4. PyV8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5. SublimeLinter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6. SublimeTmpl&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7. Terminal&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8. Markdown Preview&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9. Markdown Editing&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10. SmartMarkdown&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11. Pretty YAML&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12. Python Flake8 Lint&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13. SideBarEnhancements&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14. SublimeCodeIntel&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15. Git Config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16. GitStatus&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17. Gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18. Go to definition&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19. GoToLastEdit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20. SublimeGit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="editor" scheme="http://lixxu.github.io/categories/editor/"/>
+    
+    
+      <category term="sublime" scheme="http://lixxu.github.io/tags/sublime/"/>
     
   </entry>
   
