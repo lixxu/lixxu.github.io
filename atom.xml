@@ -165,9 +165,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
-    
       <category term="psutil" scheme="http://lixxu.github.io/tags/psutil/"/>
+    
+      <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
     
   </entry>
   
@@ -477,9 +477,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
-    
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
     
   </entry>
   
