@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lixxu.github.io/"/>
-  <updated>2019-02-20T05:51:46.581Z</updated>
+  <updated>2019-02-20T05:57:52.221Z</updated>
   <id>http://lixxu.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://lixxu.github.io/2019/02/20/use-new-image-server/"/>
     <id>http://lixxu.github.io/2019/02/20/use-new-image-server/</id>
     <published>2019-02-20T05:46:33.000Z</published>
-    <updated>2019-02-20T05:51:46.581Z</updated>
+    <updated>2019-02-20T05:57:52.221Z</updated>
     
     <content type="html"><![CDATA[<p>这几年发生了许多事, 导致好久没写了. 现在想再拾起来, 发现图片都不能用了, 也没法下载了, 发了工单, 恢复倒是挺快, 也按照说明把图片导出来了.</p><p>换到新 <a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/</a> 了, 只能传图片, 暂时先这样吧, 后续有时间再折腾其他.</p>]]></content>
     
@@ -71,7 +71,7 @@
     <link href="http://lixxu.github.io/2017/11/14/special-days/"/>
     <id>http://lixxu.github.io/2017/11/14/special-days/</id>
     <published>2017-11-14T00:46:06.000Z</published>
-    <updated>2019-02-20T01:46:09.634Z</updated>
+    <updated>2019-02-20T06:05:38.749Z</updated>
     
     <content type="html"><![CDATA[<p>仅以此篇记录一些特殊的日子:</p><p><strong>2015-04-15</strong><br><strong>2015-04-16</strong><br><strong>2015-04-22</strong><br><strong>2015-04-29</strong><br><strong>2015-04-30</strong><br><strong>2015-06-01</strong><br><strong>2015-06-08</strong><br><strong>2015-08-31</strong><br><strong>2015-10-05</strong><br><strong>2017-03-29</strong><br><strong>2017-06-04</strong><br><strong>2018-10-01</strong><br><strong>end</strong></p>]]></content>
     
@@ -139,9 +139,9 @@
       <category term="database" scheme="http://lixxu.github.io/categories/database/"/>
     
     
-      <category term="postgresql" scheme="http://lixxu.github.io/tags/postgresql/"/>
-    
       <category term="database" scheme="http://lixxu.github.io/tags/database/"/>
+    
+      <category term="postgresql" scheme="http://lixxu.github.io/tags/postgresql/"/>
     
   </entry>
   
@@ -218,9 +218,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
-    
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="py2exe" scheme="http://lixxu.github.io/tags/py2exe/"/>
     
       <category term="marrowmailer" scheme="http://lixxu.github.io/tags/marrowmailer/"/>
     
@@ -442,9 +442,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
-    
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
     
   </entry>
   
@@ -499,9 +499,9 @@
     
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
-      <category term="database" scheme="http://lixxu.github.io/tags/database/"/>
-    
       <category term="pyodbc" scheme="http://lixxu.github.io/tags/pyodbc/"/>
+    
+      <category term="database" scheme="http://lixxu.github.io/tags/database/"/>
     
   </entry>
   
