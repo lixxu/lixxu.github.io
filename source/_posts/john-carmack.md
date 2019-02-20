@@ -7,7 +7,7 @@ categories: prog
 ---
 源贴在这里 (也是转帖): <http://www.douban.com/note/196653073/>
 
-{% img http://lixxu.qiniudn.com/quake.jpg %}
+{% img https://i.loli.net/2019/02/20/5c6ce1216fbb5.jpg %}
 
 `Quake-III` 代码里神奇的浮点开方函数
 
@@ -16,7 +16,7 @@ categories: prog
 事实上早在90年代初DOS时代, 只要能在PC上搞个小动画都能让人惊叹一番的时候, `John Carmack` 就推出了石破天惊的`Castle Wolfstein`, 然后再接再励, `doom`, `doomII`, `Quake`...每次都把 3-D 技术推到极致. 他的3D引擎代码极度高效, 几乎是在压榨PC机的每条运算指令. 当初MS的 `Direct3D` 也得听取他的意见, 修改了不少API.
 
 <!--more-->
-最近, QUAKE的开发商 `ID SOFTWARE` 遵守GPL协议, 公开了QUAKE-III的原代码, 让世人有幸目睹Carmack传奇的3D引擎的原码. 这是QUAKE-III原代码的下载地址: 
+最近, QUAKE的开发商 `ID SOFTWARE` 遵守GPL协议, 公开了QUAKE-III的原代码, 让世人有幸目睹Carmack传奇的3D引擎的原码. 这是QUAKE-III原代码的下载地址:
 <http://www.fileshack.com/file.x?fid=7547>
 
 (下面是官方的下载网址, 搜索 `quake3-1.32b-source.zip` 可以找到一大堆中文网页的
@@ -47,12 +47,12 @@ float Q_rsqrt( float number )
     #endif
     #endif
     return y;
-} 
+}
 {% endcodeblock %}
 
 函数返回 `1/sqrt(x)`, 这个函数在图像处理中比 `sqrt(x)` 更有用. 注意到这个函数只用了一次叠代! (其实就是根本没用叠代, 直接运算). 编译, 实验, 这个函数不仅工作的很好, 而且比标准的 `sqrt()` 函数快4倍! 要知道, 编译器自带的函数, 可是经过严格仔细的汇编优化的啊!
-  
-这个简洁的函数, 最核心, 也是最让人费解的, 就是标注了 `what the fuck?` 的一句 
+
+这个简洁的函数, 最核心, 也是最让人费解的, 就是标注了 `what the fuck?` 的一句
 `i = 0x5f3759df - ( i >> 1 );` 再加上 `y = y * ( threehalfs - ( x2 * y * y ) );` 两句话就完成了开方运算! 而且注意到, 核心那句是定点移位运算, 速度极快! 特别在很多没有乘法指令的RISC结构CPU上, 这样做是极其高效的.
 
 算法的原理其实不复杂, 就是牛顿迭代法, 用 `x-f(x)/f'(x)` 来不断的逼近 `f(x)=a`的根.
@@ -91,7 +91,7 @@ Lomont为此写下一篇论文, `"Fast Inverse Square Root"`.
 float InvSqrt(float x)
 {
     float xhalf = 0.5f*x;
-    int i = *(int*)&x; // get bits for floating VALUE 
+    int i = *(int*)&x; // get bits for floating VALUE
     i = 0x5f375a86- (i>>1); // gives initial guess y0
     x = *(float*)&i; // convert bits BACK to float
     x = x*(1.5f-xhalf*x*x); // Newton step, repeating increases accuracy
@@ -129,11 +129,11 @@ PS2. 在他們追尋的過程中, 有人提到一份叫做 MIT HACKMEM 的文件
 (       4   + 2/   4     ) / 2 = 2.25
 (     2.25   + 2/   2.25   ) / 2 = 1.56944..
 ( 1.56944..+ 2/1.56944..) / 2 = 1.42189..
-( 1.42189..+ 2/1.42189..) / 2 = 1.41423.. 
+( 1.42189..+ 2/1.42189..) / 2 = 1.41423..
 ....
 ```
 
-{% img http://lixxu.qiniudn.com/newton.jpg %}
+{% img https://i.loli.net/2019/02/20/5c6ce84a95aa0.jpg %}
 
 这种算法的原理很简单, 我们仅仅是不断用 `(x, f(x))` 的切线来逼近方程 `x^2-a=0`的根. 根号a实际上就是 `x^2-a=0`的一个正实根, 这个函数的导数是2x. 也就是说, 函数上任一点 `(x,f(x))`处的切线斜率是2x. 那么, `x-f(x)/(2x)` 就是一个比 x 更接近的近似值. 代入 `f(x)=x^2-a` 得到 `x-(x^2-a)/(2x)`, 也就是 `(x+a/x)/2`.
 <!--more-->

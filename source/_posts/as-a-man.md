@@ -8,4 +8,4 @@ tags: joke
 ---
 网上看到, 忍不住放到这里收藏下:
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/dongbeiren.jpg %}
+{% img https://i.loli.net/2019/02/20/5c6ce13bd773b.jpg %}

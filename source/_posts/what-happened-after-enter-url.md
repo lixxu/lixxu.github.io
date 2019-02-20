@@ -6,7 +6,7 @@ comments: true
 categories: web
 tags: web
 ---
-{% img http://7ktor3.com1.z0.glb.clouddn.com/nwind-weibo.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13b98220.png %}
 
 原文很长, 没看完我就觉得什么也不懂了, 囧.
 

@@ -14,57 +14,57 @@ categories: prog
 
 Python
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/python-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13c06fa4.png %}
 <!--more-->
 Java
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/java-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13bcc479.png %}
 
 C++
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/cpp-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce0cd0307d.png %}
 
 Ruby
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/ruby-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce12191eeb.png %}
 
 PHP
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/php-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13c096e1.png %}
 
 C#
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/csharp-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce0cd00df2.png %}
 
 JavaScript
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/js-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13bd5393.png %}
 
 Perl
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/perl-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce13c00c13.png %}
 
 C
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/c-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce0ccf1652.png %}
 
 VisualBasic
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/vb-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce12190c94.png %}
 
 R
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/r-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce12180d0c.png %}
 
 Scala
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/scala-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce1218da55.png %}
 
 Shell
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/shell-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce12191445.png %}
 
 ActionScript
 
-{% img http://7ktor3.com1.z0.glb.clouddn.com/actionscript-human.png %}
+{% img https://i.loli.net/2019/02/20/5c6ce0ccda136.png %}
 <!--more-->
