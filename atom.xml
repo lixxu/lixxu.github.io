@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lixxu.github.io/"/>
-  <updated>2019-02-20T05:57:52.221Z</updated>
+  <updated>2019-02-20T07:03:28.646Z</updated>
   <id>http://lixxu.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>添加萌萌哒</title>
+    <link href="http://lixxu.github.io/2019/02/20/add-mengmengda/"/>
+    <id>http://lixxu.github.io/2019/02/20/add-mengmengda/</id>
+    <published>2019-02-20T07:02:44.000Z</published>
+    <updated>2019-02-20T07:03:28.646Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考 <a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">https://www.simon96.online/2018/10/12/hexo-tutorial/</a>, 在页面上添加萌萌哒.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;参考 &lt;a href=&quot;https://www.simon96.online/2018/10/12/hexo-tutorial/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.simon96.online/2018/10/12/he
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="http://lixxu.github.io/categories/blog/"/>
+    
+    
+      <category term="blog" scheme="http://lixxu.github.io/tags/blog/"/>
+    
+  </entry>
   
   <entry>
     <title>使用新图床</title>
@@ -517,32 +542,6 @@
     <summary type="html">
     
       &lt;p&gt;安装的插件:&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1. Alignment&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2. Autoprefixer&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3. PySide&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4. PyV8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5. SublimeLinter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6. SublimeTmpl&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7. Terminal&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8. Markdown Preview&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9. Markdown Editing&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10. SmartMarkdown&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11. Pretty YAML&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12. Python Flake8 Lint&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13. SideBarEnhancements&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14. SublimeCodeIntel&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15. Git Config&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16. GitStatus&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17. Gitignore&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18. Go to definition&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19. GoToLastEdit&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20. SublimeGit&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="editor" scheme="http://lixxu.github.io/categories/editor/"/>
-    
-    
-      <category term="sublime" scheme="http://lixxu.github.io/tags/sublime/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Sublime text安装Package Control</title>
-    <link href="http://lixxu.github.io/2014/05/08/install-package-control-for-sublime-text/"/>
-    <id>http://lixxu.github.io/2014/05/08/install-package-control-for-sublime-text/</id>
-    <published>2014-05-08T03:46:45.000Z</published>
-    <updated>2017-11-20T01:47:01.276Z</updated>
-    
-    <content type="html"><![CDATA[<p><code>Ctrl+`</code> 或菜单里 <code>View</code> -&gt; <code>Show Console</code>, 在文本框中输入:</p><p>#Sublime3:<br><code><br>import urllib.request,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404’ + ‘e330c659d4bb41d3bdf022e94cab3cd0’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by = urllib.request.urlopen(‘<a href="http://sublime.wbond.net/&#39;" target="_blank" rel="noopener">http://sublime.wbond.net/&#39;</a> + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h)) if dh != h else open(os.path.join(ipp, pf), ‘wb’).write(by)<br></code></p><p>#Sublime2:<br><code><br>import urllib2,os,hashlib; h = ‘7183a2d3e96f11eeadd761d777e62404’ + ‘e330c659d4bb41d3bdf022e94cab3cd0’; pf = ‘Package Control.sublime-package’; ipp = sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); by = urllib2.urlopen(‘<a href="http://sublime.wbond.net/&#39;" target="_blank" rel="noopener">http://sublime.wbond.net/&#39;</a> + pf.replace(‘ ‘, ‘%20’)).read(); dh = hashlib.sha256(by).hexdigest(); open(os.path.join(ipp, pf), ‘wb’).write(by) if dh == h else None; print(‘Error validating download (got %s instead of %s), please try manual install’ % (dh, h) if dh != h else ‘Please restart Sublime Text to finish installation’)<br></code></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;code&gt;Ctrl+`&lt;/code&gt; 或菜单里 &lt;code&gt;View&lt;/code&gt; -&amp;gt; &lt;code&gt;Show Console&lt;/code&gt;, 在文本框中输入:&lt;/p&gt;
-&lt;p&gt;#Sublime3:&lt;br&gt;&lt;code&gt;&lt;br&gt;import urllib.request
-      
     
     </summary>
     
