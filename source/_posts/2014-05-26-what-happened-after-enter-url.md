@@ -6,7 +6,7 @@ comments: true
 categories: web
 tags: web
 ---
-{% img https://i.loli.net/2019/02/20/5c6ce13b98220.png %}
+{% asset_image nwind-weibo.png %}
 
 原文很长, 没看完我就觉得什么也不懂了, 囧.
 

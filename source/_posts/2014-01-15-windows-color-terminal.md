@@ -8,11 +8,21 @@ tags:
 - python
 - ctypes
 ---
+更新:
+用 `click` 和 `colorama` 配合使用, 很方便, 比如:
+```python
+#!/usr/bin/env python3
+#-*- coding: utf-8 -*-
+
+import click
+
+click.secho("red text", fg="red")
+```
 
 最近有在 Windows 命令行程序下打印彩色文字的需要, 放了半天狗, 试了几个包, 都不是很满意, 最后还是使用决定 `ctypes`.
 
 先看下例子 (超过 15 好像就是背景色了):
-{% img https://i.loli.net/2019/02/20/5c6ce0cca1aa3.png %}
+{% asset_image color_terminal.png %}
 <!--more-->
 具体用法(Python 2.7.6下):
 ```python color_terminal_test.py
@@ -23,26 +33,39 @@ from __future__ import unicode_literals, print_function
 from ctypes import windll, c_ulong
 
 HANDLER = windll.Kernel32.GetStdHandle(c_ulong(0xfffffff5))
-COLOR_MAPS = dict(black=0, dark_blue=1, dark_green=2,
-    dark_navy=3, dark_red=4, dark_purple=5,
-    dark_yellow=6, dark_white=7, gray=8,
-    blue=9, green=10, navy=11,
-    red=12, purple=13, yellow=14,
-    white=15, default=7,
+COLOR_MAPS = dict(
+    black=0,
+    blue=9,
+    dark_blue=1,
+    dark_green=2,
+    dark_navy=3,
+    dark_purple=5,
+    dark_red=4,
+    dark_white=7,
+    dark_yellow=6,
+    default=7,
+    gray=8,
+    green=10,
+    navy=11,
+    purple=13,
+    red=12,
+    white=15,
+    yellow=14,
+)
+
+
+def set_color(color="default"):
+    windll.Kernel32.SetConsoleTextAttribute(
+        HANDLER, COLOR_MAPS.get(color, 7)
     )
 
 
-def set_color(color='default'):
-    windll.Kernel32.SetConsoleTextAttribute(HANDLER,
-        COLOR_MAPS.get(color, 7))
-
-
-def show_text(text, color='default', new_line=True):
+def show_text(text, color="default", new_line=True):
     set_color(color)
-    print('{}{}'.format(text, '\n' if new_line else ''), end='')
+    print("{}{}".format(text, "\n" if new_line else "), end=")
     set_color()
 
-show_text('yellow', color='yellow')
+show_text("yellow", color="yellow")
 ```
 
 `COLOR_MAPS` 里多了一个 `default`, 这个就是默认终端下的文字颜色.

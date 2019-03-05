@@ -8,6 +8,8 @@ tags:
 - pypi
 - python
 ---
+更新:
+现在都用 <https://pypi.org/project/twine/> 了.
 
 距上次发布软件包过去了很久, 都忘了操作步骤了, 今天碰巧发布一个小包, 放狗搜了一下, 记下来备忘:
 
@@ -30,7 +32,7 @@ python setup.py register -r pypi
 
 按提示做选择就可以了:
 
-{% img https://i.loli.net/2019/02/20/5c6ce13b9e0c5.png %}
+{% asset_image pypi.png %}
 
 3\. 上传, 一串字符滚过之后看到 `200` 就 OK 了
 
@@ -38,4 +40,4 @@ python setup.py register -r pypi
 python setup.py upload -r pypi
 {% endcodeblock %}
 
-{% img https://i.loli.net/2019/02/20/5c6ce13ba3a3c.png %}
+{% asset_image pypi_upload.png %}

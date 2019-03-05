@@ -7,7 +7,7 @@ categories: prog
 ---
 源贴在这里 (也是转帖): <http://www.douban.com/note/196653073/>
 
-{% img https://i.loli.net/2019/02/20/5c6ce1216fbb5.jpg %}
+{% asset_image quake.jpg %}
 
 `Quake-III` 代码里神奇的浮点开方函数
 
@@ -133,7 +133,7 @@ PS2. 在他們追尋的過程中, 有人提到一份叫做 MIT HACKMEM 的文件
 ....
 ```
 
-{% img https://i.loli.net/2019/02/20/5c6ce84a95aa0.jpg %}
+{% asset_image newton.jpg %}
 
 这种算法的原理很简单, 我们仅仅是不断用 `(x, f(x))` 的切线来逼近方程 `x^2-a=0`的根. 根号a实际上就是 `x^2-a=0`的一个正实根, 这个函数的导数是2x. 也就是说, 函数上任一点 `(x,f(x))`处的切线斜率是2x. 那么, `x-f(x)/(2x)` 就是一个比 x 更接近的近似值. 代入 `f(x)=x^2-a` 得到 `x-(x^2-a)/(2x)`, 也就是 `(x+a/x)/2`.
 <!--more-->

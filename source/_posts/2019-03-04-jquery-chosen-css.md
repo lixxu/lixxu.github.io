@@ -2,7 +2,9 @@
 title: jQuery Chosen异常CSS的修复
 comments: true
 date: 2019-03-04 09:30:41
-tags: jquery chosen
+tags:
+- jquery
+- chosen
 categories: web
 ---
 背景:
@@ -10,7 +12,7 @@ categories: web
 2. chosen 1.8.7
 3. bootstrap 3.4.1
 
-
+<!--more-->
 在使用 [chosen](https://harvesthq.github.io/chosen/) 时, 在给选择框加错误提示时, 边框的颜色没有变:
 {% asset_image no-border-error.png %}
 
@@ -35,3 +37,4 @@ div.form-group.has-error div div a.chosen-single {
 {% asset_image ok.png %}
 
 注意: 这个方法在 `bootstrap4` 上无效.
+<!--more-->
