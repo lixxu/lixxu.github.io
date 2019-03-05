@@ -5,4 +5,9 @@ comments: false
 sharing: false
 footer: true
 ---
-`人生如低头, 看人世繁华.`
+```
+浮世三千, 吾爱有三.
+日, 月与卿.
+日为朝, 月为暮,
+卿为朝朝暮暮.
+```
