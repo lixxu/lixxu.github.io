@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lixxu.github.io/"/>
-  <updated>2019-03-05T01:42:59.465Z</updated>
+  <updated>2019-03-07T04:55:55.256Z</updated>
   <id>http://lixxu.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>忽略 pip 在 python2.7 上的废弃警告</title>
+    <link href="http://lixxu.github.io/2019/03/07/ignore-pip-upgrade-deprecation/"/>
+    <id>http://lixxu.github.io/2019/03/07/ignore-pip-upgrade-deprecation/</id>
+    <published>2019-03-07T04:42:41.000Z</published>
+    <updated>2019-03-07T04:55:55.256Z</updated>
+    
+    <content type="html"><![CDATA[<p>新版的 <code>pip</code> 在 <code>python2.7</code> 上使用时, 会显示废弃的信息.<br><img src="/2019/03/07/ignore-pip-upgrade-deprecation/pip.png"></p><p>看着比较烦人, 网上有解决方案 <a href="https://github.com/pypa/pip/pull/6147#issuecomment-457910432" target="_blank" rel="noopener">https://github.com/pypa/pip/pull/6147#issuecomment-457910432</a>.</p><p>具体做法是:<br>新建一个 <code>PYTHONWARNINGS</code> 的环境变量, 值设为 <code>ignore:DEPRECATION::pip._internal.cli.base_command</code>, <code>Windows</code> 下两边没有双引号, 其他平台可能需要.</p><p>重新启动命令行, 再跑一下, 应该就没有了.<br><img src="/2019/03/07/ignore-pip-upgrade-deprecation/pip_ok.png"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;新版的 &lt;code&gt;pip&lt;/code&gt; 在 &lt;code&gt;python2.7&lt;/code&gt; 上使用时, 会显示废弃的信息.&lt;br&gt;&lt;img src=&quot;/2019/03/07/ignore-pip-upgrade-deprecation/pip.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;看着
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="pip" scheme="http://lixxu.github.io/tags/pip/"/>
+    
+  </entry>
   
   <entry>
     <title>jQuery Chosen异常CSS的修复</title>
@@ -466,9 +494,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="gevent" scheme="http://lixxu.github.io/tags/gevent/"/>
-    
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="gevent" scheme="http://lixxu.github.io/tags/gevent/"/>
     
       <category term="flask-script" scheme="http://lixxu.github.io/tags/flask-script/"/>
     
@@ -526,36 +554,6 @@
     
     
       <category term="web" scheme="http://lixxu.github.io/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pyodbc in 查询</title>
-    <link href="http://lixxu.github.io/2014/05/12/sql-in-operator-in-pyodbc/"/>
-    <id>http://lixxu.github.io/2014/05/12/sql-in-operator-in-pyodbc/</id>
-    <published>2014-05-12T03:37:58.000Z</published>
-    <updated>2019-02-20T07:18:25.946Z</updated>
-    
-    <content type="html"><![CDATA[<p>参考链接, 看 <code>geographika</code> 的答案即可:</p><p><a href="http://stackoverflow.com/questions/4819356/sql-in-operator-using-pyodbc-and-sql-server" target="_blank" rel="noopener">http://stackoverflow.com/questions/4819356/sql-in-operator-using-pyodbc-and-sql-server</a></p><p>记录一下如何在 <code>pyodbc</code> 中使用 <code>in</code> 查询:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pyodbc</span><br><span class="line"></span><br><span class="line">alist = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br><span class="line">sql = <span class="string">'select * from table where field1 in (%s)'</span></span><br><span class="line">conn = pyodbc.connect(...)</span><br><span class="line">cur = conn.cursor()</span><br><span class="line">cur.execute(sql % (<span class="string">','</span>.join([<span class="string">'?'</span>] * len(alist))), alist)</span><br><span class="line">cur.fetchall()</span><br><span class="line">conn.close()</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;参考链接, 看 &lt;code&gt;geographika&lt;/code&gt; 的答案即可:&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4819356/sql-in-operator-using-pyodbc-and-sql-s
-      
-    
-    </summary>
-    
-      <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
-    
-    
-      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
-    
-      <category term="pyodbc" scheme="http://lixxu.github.io/tags/pyodbc/"/>
-    
-      <category term="database" scheme="http://lixxu.github.io/tags/database/"/>
     
   </entry>
   
