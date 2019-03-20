@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lixxu.github.io/"/>
-  <updated>2019-03-13T03:37:53.051Z</updated>
+  <updated>2019-03-20T09:02:39.515Z</updated>
   <id>http://lixxu.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用 utterances 作为评论系统</title>
+    <link href="http://lixxu.github.io/2019/03/20/use-utterances-comment/"/>
+    <id>http://lixxu.github.io/2019/03/20/use-utterances-comment/</id>
+    <published>2019-03-20T08:36:10.000Z</published>
+    <updated>2019-03-20T09:02:39.515Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考来源: <a href="https://wangjiezhe.com/posts/2018-10-29-Hexo-NexT-3/" target="_blank" rel="noopener">https://wangjiezhe.com/posts/2018-10-29-Hexo-NexT-3/</a></p><p>今天在 <a href="http://weekly.pychina.org/issue/issue-359.html" target="_blank" rel="noopener">蟒周刊</a> 里看到使用了 <a href="https://utteranc.es" target="_blank" rel="noopener">utterances</a> 作为评论系统, 网上查了一下, 原来是基于 <code>github</code> 的. 于是我也跟风配置了一下, 就不用 <a href="https://disqus.com" target="_blank" rel="noopener">disqus</a> 了, 毕竟只能用梯子才能访问.</p><p>由于我用的是 <a href="https://github.com/chaooo/hexo-theme-BlueLake" target="_blank" rel="noopener">BlueLake</a>, 里面的模板用的是 <a href="http://jade-lang.com/" target="_blank" rel="noopener">Jade</a>, 根本不熟悉 (好像新版用 <a href="https://pugjs.org/api/getting-started.html" target="_blank" rel="noopener">pug</a> 代替 <code>Jade</code> 了). 在 <a href="https://stackoverflow.com/questions/8698534/how-to-pass-variable-from-jade-template-file-to-a-script-file" target="_blank" rel="noopener">SO</a>看到传递参数的语法是 <code>#{variable_name}</code>.</p><p>最后, 总算搞定了.</p><ol><li><p>在文件 <code>themes\BlueLake\layout\_partial\comments.jade</code> 的最后添加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">if theme.comment.utterances.enable</span><br><span class="line">  #comments.comments</span><br><span class="line">    script(type=&quot;text/javascript&quot;,src=&quot;https://utteranc.es/client.js&quot;,charset=&quot;utf-8&quot;,repo=&quot;#&#123;theme.comment.utterances.repo&#125;&quot;,issue-term=&quot;#&#123;theme.comment.utterances.issue_term&#125;&quot;,theme=&quot;#&#123;theme.comment.utterances.theme&#125;&quot;,crossorigin=&quot;anonymous&quot;,async=true)</span><br></pre></td></tr></table></figure></li><li><p>打开主题评论的配置选项:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">comment:</span><br><span class="line">  duoshuo: #chaooo ## duoshuo_shortname</span><br><span class="line">  disqus: ## disqus_shortname</span><br><span class="line">  livere: ## 来必力(data-uid)</span><br><span class="line">  uyan: ## 友言(uid)</span><br><span class="line">  cloudTie: ## 网易云跟帖(productKey)</span><br><span class="line">  utterances:</span><br><span class="line">    enable: true</span><br><span class="line">    repo: owner/repo</span><br><span class="line">    issue_term: pathname # pathname, url, title, og:title [ISSUE NUMBER] or [SPECIFIC TERM]</span><br><span class="line">    theme: github-light</span><br><span class="line">  changyan: ## 畅言需在下方配置两个参数，此处不填。</span><br><span class="line">    appid: ## 畅言(appid)</span><br><span class="line">    appkey: ##畅言(appkey)</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;参考来源: &lt;a href=&quot;https://wangjiezhe.com/posts/2018-10-29-Hexo-NexT-3/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://wangjiezhe.com/posts/2018-10-
+      
+    
+    </summary>
+    
+      <category term="blog" scheme="http://lixxu.github.io/categories/blog/"/>
+    
+    
+      <category term="utterances" scheme="http://lixxu.github.io/tags/utterances/"/>
+    
+      <category term="jade" scheme="http://lixxu.github.io/tags/jade/"/>
+    
+      <category term="pug" scheme="http://lixxu.github.io/tags/pug/"/>
+    
+  </entry>
   
   <entry>
     <title>忽略 pip 在 python2.7 上的废弃警告</title>
@@ -527,33 +556,6 @@
       <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
       <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从输入 URL 到页面加载完成的过程中都发生了什么事情?</title>
-    <link href="http://lixxu.github.io/2014/05/26/what-happened-after-enter-url/"/>
-    <id>http://lixxu.github.io/2014/05/26/what-happened-after-enter-url/</id>
-    <published>2014-05-26T08:25:28.000Z</published>
-    <updated>2019-03-13T03:37:53.317Z</updated>
-    
-    <content type="html"><![CDATA[<img src="/2014/05/26/what-happened-after-enter-url/nwind-weibo.png"><p>原文很长, 没看完我就觉得什么也不懂了, 囧.</p><p><a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank" rel="noopener">http://fex.baidu.com/blog/2014/05/what-happen/</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;img src=&quot;/2014/05/26/what-happened-after-enter-url/nwind-weibo.png&quot;&gt;
-&lt;p&gt;原文很长, 没看完我就觉得什么也不懂了, 囧.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://fex.baidu.com/blog/2
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://lixxu.github.io/categories/web/"/>
-    
-    
-      <category term="web" scheme="http://lixxu.github.io/tags/web/"/>
     
   </entry>
   
