@@ -523,9 +523,9 @@
       <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
     
     
-      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
-    
       <category term="gevent" scheme="http://lixxu.github.io/tags/gevent/"/>
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
     
       <category term="flask-script" scheme="http://lixxu.github.io/tags/flask-script/"/>
     
