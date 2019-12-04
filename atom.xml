@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lixxu.github.io/"/>
-  <updated>2019-09-20T08:46:59.198Z</updated>
+  <updated>2019-03-20T09:02:39.515Z</updated>
   <id>http://lixxu.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>亲爱的天堂好吗</title>
-    <link href="http://lixxu.github.io/2019/09/20/rip/"/>
-    <id>http://lixxu.github.io/2019/09/20/rip/</id>
-    <published>2019-09-20T08:30:00.000Z</published>
-    <updated>2019-09-20T08:46:59.198Z</updated>
-    
-    <content type="html"><![CDATA[<p>时间过得真快, 转眼一年了.<br>本以为是按阳历, 国庆期间我正好可以去, 结果老人说是按农历, 那就先两个娃去吧, 我后面再去了.<br>本以为我可以轻松地放下, 没想到最近越来越静不下心, 导致工作也收到严重的影响.<br>每每想到过往的点点滴滴, 就会想人生的意义是什么, 人为什么会这样, 乱七八糟的乱想一通.<br>时间看起来还剩下不少, 只是真的没什么意思.<br>R.I.P</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;时间过得真快, 转眼一年了.&lt;br&gt;本以为是按阳历, 国庆期间我正好可以去, 结果老人说是按农历, 那就先两个娃去吧, 我后面再去了.&lt;br&gt;本以为我可以轻松地放下, 没想到最近越来越静不下心, 导致工作也收到严重的影响.&lt;br&gt;每每想到过往的点点滴滴, 就会想人生的意义是
-      
-    
-    </summary>
-    
-      <category term="life" scheme="http://lixxu.github.io/categories/life/"/>
-    
-    
-      <category term="life" scheme="http://lixxu.github.io/tags/life/"/>
-    
-  </entry>
   
   <entry>
     <title>使用 utterances 作为评论系统</title>
@@ -446,39 +421,6 @@
   </entry>
   
   <entry>
-    <title>Android刷机相关</title>
-    <link href="http://lixxu.github.io/2014/07/01/android-flash-stuff/"/>
-    <id>http://lixxu.github.io/2014/07/01/android-flash-stuff/</id>
-    <published>2014-07-01T10:31:16.000Z</published>
-    <updated>2019-03-13T03:37:53.238Z</updated>
-    
-    <content type="html"><![CDATA[<p>记录下来备忘:</p><p>背景:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. Nexus 4</span><br><span class="line"></span><br><span class="line">2. Mokee 4.4.4</span><br><span class="line"></span><br><span class="line">3. TWRP</span><br></pre></td></tr></table></figure><p>我保存的基带共享链接: <a href="http://pan.baidu.com/s/1gdf4pfd" target="_blank" rel="noopener">http://pan.baidu.com/s/1gdf4pfd</a></p><p>原帖看这里: <a href="http://bbs.mfunz.com/thread-947343-1-1.html" target="_blank" rel="noopener">http://bbs.mfunz.com/thread-947343-1-1.html</a></p><p>1. 刷基带, 按照帖子来就可以, 简单就是<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 进入fastboot</span><br><span class="line">2. flash-all.bat</span><br></pre></td></tr></table></figure></p><p>2. 更新TWRP <a href="http://teamw.in/project/twrp2/129" target="_blank" rel="noopener">http://teamw.in/project/twrp2/129</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Download - Recovery Image Method:</span><br><span class="line"></span><br><span class="line">Download the newest .img file here</span><br><span class="line"></span><br><span class="line">Download the above file.  Turn off your device. Turn on the device and keep</span><br><span class="line">holding volume down until a menu shows up. The device will now be in fastboot</span><br><span class="line">mode. Plug the device into your computer.  If you have the right drivers</span><br><span class="line">installed, your screen should now say FASTBOOT USB.  Run the following command</span><br><span class="line">via the command line:</span><br><span class="line"></span><br><span class="line">fastboot flash recovery recoveryfilename.img</span><br><span class="line"></span><br><span class="line">Note that you will need to change the last part to match the name of the file</span><br><span class="line">that you just downloaded.  You will also need adb and fastboot for your computer.</span><br></pre></td></tr></table></figure><p>简单讲就是:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 下载.img文件</span><br><span class="line">2. 进入fastboot</span><br><span class="line">3. 运行 fastboot flash recovery openrecovery-twrp-2.7.1.0-mako.img</span><br><span class="line"></span><br><span class="line">注意:</span><br><span class="line">1. 这里的 openrecovery-twrp-2.7.1.0-mako.img 要换成你对应的名字</span><br><span class="line">2. fastboot 实际是 fastboot.exe</span><br></pre></td></tr></table></figure></p><p>补: 如何进 <code>fastboot</code>?</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 关机</span><br><span class="line">2. 电源 + 音量-, 直到出现菜单</span><br></pre></td></tr></table></figure><p>以上.</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;记录下来备忘:&lt;/p&gt;
-&lt;p&gt;背景:&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;lin
-      
-    
-    </summary>
-    
-      <category term="android" scheme="http://lixxu.github.io/categories/android/"/>
-    
-    
-      <category term="android" scheme="http://lixxu.github.io/tags/android/"/>
-    
-      <category term="fastboot" scheme="http://lixxu.github.io/tags/fastboot/"/>
-    
-      <category term="recovery" scheme="http://lixxu.github.io/tags/recovery/"/>
-    
-      <category term="mokee" scheme="http://lixxu.github.io/tags/mokee/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用 Python 设置系统时间</title>
     <link href="http://lixxu.github.io/2014/06/22/use-python-set-system-time/"/>
     <id>http://lixxu.github.io/2014/06/22/use-python-set-system-time/</id>
@@ -553,6 +495,61 @@
       <category term="gevent" scheme="http://lixxu.github.io/tags/gevent/"/>
     
       <category term="flask-script" scheme="http://lixxu.github.io/tags/flask-script/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 PyPi 上发布软件包</title>
+    <link href="http://lixxu.github.io/2014/06/09/how-to-register-pypi/"/>
+    <id>http://lixxu.github.io/2014/06/09/how-to-register-pypi/</id>
+    <published>2014-06-09T06:33:10.000Z</published>
+    <updated>2019-03-13T03:37:53.302Z</updated>
+    
+    <content type="html"><![CDATA[<p>更新:<br>现在都用 <a href="https://pypi.org/project/twine/" target="_blank" rel="noopener">https://pypi.org/project/twine/</a> 了.</p><p>距上次发布软件包过去了很久, 都忘了操作步骤了, 今天碰巧发布一个小包, 放狗搜了一下, 记下来备忘:</p><p>来源: <a href="http://peterdowns.com/posts/first-time-with-pypi.html" target="_blank" rel="noopener">http://peterdowns.com/posts/first-time-with-pypi.html</a></p><p>基本操作:</p><p>1. 准备好 <code>setup.py</code>, 提供一下 <code>setup.cfg</code></p><figure class="highlight ini"><figcaption><span>setup.cfg</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[metadata]</span></span><br><span class="line"><span class="attr">description-file</span> = README.md</span><br></pre></td></tr></table></figure><p>2. 注册:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup.py register -r pypi</span><br></pre></td></tr></table></figure><p>按提示做选择就可以了:</p><img src="/2014/06/09/how-to-register-pypi/pypi.png"><p>3. 上传, 一串字符滚过之后看到 <code>200</code> 就 OK 了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup.py upload -r pypi</span><br></pre></td></tr></table></figure><img src="/2014/06/09/how-to-register-pypi/pypi_upload.png">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;更新:&lt;br&gt;现在都用 &lt;a href=&quot;https://pypi.org/project/twine/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pypi.org/project/twine/&lt;/a&gt; 了.&lt;/p&gt;
+&lt;p&gt;距上次发布软
+      
+    
+    </summary>
+    
+      <category term="python" scheme="http://lixxu.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://lixxu.github.io/tags/python/"/>
+    
+      <category term="pypi" scheme="http://lixxu.github.io/tags/pypi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从输入 URL 到页面加载完成的过程中都发生了什么事情?</title>
+    <link href="http://lixxu.github.io/2014/05/26/what-happened-after-enter-url/"/>
+    <id>http://lixxu.github.io/2014/05/26/what-happened-after-enter-url/</id>
+    <published>2014-05-26T08:25:28.000Z</published>
+    <updated>2019-03-13T03:37:53.317Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2014/05/26/what-happened-after-enter-url/nwind-weibo.png"><p>原文很长, 没看完我就觉得什么也不懂了, 囧.</p><p><a href="http://fex.baidu.com/blog/2014/05/what-happen/" target="_blank" rel="noopener">http://fex.baidu.com/blog/2014/05/what-happen/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;/2014/05/26/what-happened-after-enter-url/nwind-weibo.png&quot;&gt;
+&lt;p&gt;原文很长, 没看完我就觉得什么也不懂了, 囧.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://fex.baidu.com/blog/2
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://lixxu.github.io/categories/web/"/>
+    
+    
+      <category term="web" scheme="http://lixxu.github.io/tags/web/"/>
     
   </entry>
   
