@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>使用 Python 设置系统时间 | 学会忍受孤独</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+  
+    <link rel="alternate" href="/atom.xml" title="学会忍受孤独" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/localshare/css/share.css">
+
+  
+  
+    
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">学会忍受孤独</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">他人笑我太疯癫, 我笑他人看不穿</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> 首页</a>
+        
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> 归档</a>
+        
+          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> 关于</a>
+        
+          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> 订阅</a>
+        
+      </nav>
+    </div>
+    <div id="search-form">
+      <div id="result-mask" class="hide"></div>
+      <label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label>
+      <div id="result-wrap" class="hide">
+        <div id="search-result"></div>
+      </div>
+      <div class="hide">
+        <template id="search-tpl">
+          <div class="item">
+            <a href="/{path}" title="{title}">
+              <div class="title">{title}</div>
+              <div class="time">{date}</div>
+              <div class="tags">{tags}</div>
+            </a>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-use-python-set-system-time" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      使用 Python 设置系统时间
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2014-06-22T08:53:43.000Z" itemprop="datePublished">2014年06月22日</time>
+</span>
+      
+  <div class="article-category">
+    <i class="fa fa-classify"></i>
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2014/06/22/use-python-set-system-time/#comments" class="article-comment-link">
+  
+    
+    
+    
+      <a href="/2014/06/22/use-python-set-system-time/" id="utterances_count_unit"></a>
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  留言
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>接上文: <a href="/blog/2014/06/22/nssm-install-windows-service">使用 NSSM 安装 Windows 系统服务</a></p>
+<p>上一篇介绍使用了 <code>net time</code> 来同步系统时间, 后来突然想到如果没有服务器可供同步时间或电脑无法直接连接到服务器怎么办?</p>
+<p>就去找了下使用 <code>Python</code> 设置时间的例子, 还真有: <a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/12081310/python-module-to-change-system-date-and-time">http://stackoverflow.com/questions/12081310/python-module-to-change-system-date-and-time</a></p>
+<span id="more"></span>
+
+<p>直接贴在这里:</p>
+<figure class="highlight python"><figcaption><span>set_time.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line">time_tuple = (<span class="number">2012</span>, <span class="comment"># Year</span></span><br><span class="line">                 <span class="number">9</span>, <span class="comment"># Month</span></span><br><span class="line">                 <span class="number">6</span>, <span class="comment"># Day</span></span><br><span class="line">                 <span class="number">0</span>, <span class="comment"># Hour</span></span><br><span class="line">                <span class="number">38</span>, <span class="comment"># Minute</span></span><br><span class="line">                 <span class="number">0</span>, <span class="comment"># Second</span></span><br><span class="line">                 <span class="number">0</span>, <span class="comment"># Millisecond</span></span><br><span class="line">              )</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_win_set_time</span>(<span class="params">time_tuple</span>):</span><br><span class="line">    <span class="keyword">import</span> pywin32</span><br><span class="line">    <span class="comment"># http://timgolden.me.uk/pywin32-docs/win32api__SetSystemTime_meth.html</span></span><br><span class="line">    <span class="comment"># pywin32.SetSystemTime(year, month, dayOfWeek, day, hour, minute, second, millseconds)</span></span><br><span class="line">    dayOfWeek = datetime.datetime(time_tuple).isocalendar()[<span class="number">2</span>]</span><br><span class="line">    pywin32.SetSystemTime(time_tuple[:<span class="number">2</span>] + (dayOfWeek,) + time_tuple[<span class="number">2</span>:])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_linux_set_time</span>(<span class="params">time_tuple</span>):</span><br><span class="line">    <span class="keyword">import</span> ctypes</span><br><span class="line">    <span class="keyword">import</span> ctypes.util</span><br><span class="line">    <span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">    <span class="comment"># /usr/include/linux/time.h:</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># define CLOCK_REALTIME                     0</span></span><br><span class="line">    CLOCK_REALTIME = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># /usr/include/time.h</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># struct timespec</span></span><br><span class="line">    <span class="comment">#  &#123;</span></span><br><span class="line">    <span class="comment">#    __time_t tv_sec;            /* Seconds.  */</span></span><br><span class="line">    <span class="comment">#    long int tv_nsec;           /* Nanoseconds.  */</span></span><br><span class="line">    <span class="comment">#  &#125;;</span></span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">timespec</span>(ctypes.Structure):</span><br><span class="line">        _fields_ = [(<span class="string">&quot;tv_sec&quot;</span>, ctypes.c_long),</span><br><span class="line">                    (<span class="string">&quot;tv_nsec&quot;</span>, ctypes.c_long)]</span><br><span class="line"></span><br><span class="line">    librt = ctypes.CDLL(ctypes.util.find_library(<span class="string">&quot;rt&quot;</span>))</span><br><span class="line"></span><br><span class="line">    ts = timespec()</span><br><span class="line">    ts.tv_sec = <span class="built_in">int</span>(time.mktime(datetime.datetime(*time_tuple[:<span class="number">6</span>]).timetuple()))</span><br><span class="line">    ts.tv_nsec = time_tuple[<span class="number">6</span>] * <span class="number">1000000</span> <span class="comment"># Millisecond to nanosecond</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># http://linux.die.net/man/3/clock_settime</span></span><br><span class="line">    librt.clock_settime(CLOCK_REALTIME, ctypes.byref(ts))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> sys.platform==<span class="string">&#x27;linux2&#x27;</span>:</span><br><span class="line">    _linux_set_time(time_tuple)</span><br><span class="line"></span><br><span class="line"><span class="keyword">elif</span>  sys.platform==<span class="string">&#x27;win32&#x27;</span>:</span><br><span class="line">    _win_set_time(time_tuple)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>可是没有可供同步用的服务器, 那时间怎么来呢?</p>
+<ol>
+<li><p>跑一个 web, 可以返回一个 <code>json</code> 的数据, 如:</p>
+ <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> unicode_literals</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> flask <span class="keyword">import</span> Flask, jsonify</span><br><span class="line"></span><br><span class="line">app = Flask(__name__)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@app.route(<span class="params"><span class="string">&#x27;/api/get-time/&#x27;</span></span>)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_time</span>():</span><br><span class="line">    <span class="keyword">return</span> jsonify(time=<span class="built_in">tuple</span>(datetime.utcnow().timetuple()))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    app.run(debug=<span class="literal">True</span>, host=<span class="string">&#x27;0.0.0.0&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p> 客户端可以这样来获取和同步时间 (假设是 Windows 平台), 上面的 <code>set_time.py</code> 需要改一下:</p>
+ <figure class="highlight python"><figcaption><span>set_time2.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_win_set_time</span>(<span class="params">time_tuple</span>):</span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;time_tuple:</span></span><br><span class="line"><span class="string">    year, month, day, hour, minute, second, day_of_week, day_of_year, is_dist</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">import</span> pywin32</span><br><span class="line">    <span class="comment"># http://timgolden.me.uk/pywin32-docs/win32api__SetSystemTime_meth.html</span></span><br><span class="line">    <span class="comment"># pywin32.SetSystemTime(year, month, dayOfWeek, day, hour, minute, second, millseconds)</span></span><br><span class="line">    tt = <span class="built_in">list</span>(time_tuple)</span><br><span class="line">    tt.insert(<span class="number">2</span>, tt[<span class="number">6</span>]) <span class="comment"># add day_of_week</span></span><br><span class="line">    tt.insert(<span class="number">7</span>, <span class="number">0</span>)  <span class="comment"># set miliseconds</span></span><br><span class="line">    pywin32.SetSystemTime(*tt[:<span class="number">8</span>])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">_linux_set_time</span>(<span class="params">time_tuple</span>):</span><br><span class="line">    <span class="keyword">import</span> ctypes</span><br><span class="line">    <span class="keyword">import</span> ctypes.util</span><br><span class="line">    <span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line">    <span class="comment"># /usr/include/linux/time.h:</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># define CLOCK_REALTIME                     0</span></span><br><span class="line">    CLOCK_REALTIME = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># /usr/include/time.h</span></span><br><span class="line">    <span class="comment">#</span></span><br><span class="line">    <span class="comment"># struct timespec</span></span><br><span class="line">    <span class="comment">#  &#123;</span></span><br><span class="line">    <span class="comment">#    __time_t tv_sec;            /* Seconds.  */</span></span><br><span class="line">    <span class="comment">#    long int tv_nsec;           /* Nanoseconds.  */</span></span><br><span class="line">    <span class="comment">#  &#125;;</span></span><br><span class="line">    <span class="keyword">class</span> <span class="title class_">timespec</span>(ctypes.Structure):</span><br><span class="line">        _fields_ = [(<span class="string">&quot;tv_sec&quot;</span>, ctypes.c_long),</span><br><span class="line">                    (<span class="string">&quot;tv_nsec&quot;</span>, ctypes.c_long)]</span><br><span class="line"></span><br><span class="line">    librt = ctypes.CDLL(ctypes.util.find_library(<span class="string">&quot;rt&quot;</span>))</span><br><span class="line"></span><br><span class="line">    ts = timespec()</span><br><span class="line">    ts.tv_sec = <span class="built_in">int</span>(time.mktime(datetime.datetime(*time_tuple[:<span class="number">6</span>]).timetuple()))</span><br><span class="line">    ts.tv_nsec = time_tuple[<span class="number">6</span>] * <span class="number">1000000</span> <span class="comment"># Millisecond to nanosecond</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># http://linux.die.net/man/3/clock_settime</span></span><br><span class="line">    librt.clock_settime(CLOCK_REALTIME, ctypes.byref(ts))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">set_time</span>(<span class="params">time_tuple</span>):</span><br><span class="line">    <span class="keyword">if</span> sys.platform==<span class="string">&#x27;linux2&#x27;</span>:</span><br><span class="line">        _linux_set_time(time_tuple)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">elif</span>  sys.platform==<span class="string">&#x27;win32&#x27;</span>:</span><br><span class="line">        _win_set_time(time_tuple)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+ <figure class="highlight python"><figcaption><span>sync_time.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment">#-*- coding: utf-8 -*-</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> __future__ <span class="keyword">import</span> unicode_literals</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime, timedelta</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> set_time2</span><br><span class="line"></span><br><span class="line">URL = <span class="string">&#x27;http://a.b.c.d:5000/api/get-time/&#x27;</span></span><br><span class="line">offset = time.timezone <span class="keyword">if</span> (time.localtime().tm_isdst == <span class="number">0</span>) <span class="keyword">else</span> time.altzone</span><br><span class="line">LOCAL_TZ = offset / <span class="number">60</span> / <span class="number">60</span> * -<span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_time</span>():</span><br><span class="line">    r = requests.get(URL)</span><br><span class="line">    json = r.json()</span><br><span class="line">    <span class="keyword">return</span> json[<span class="string">&#x27;time&#x27;</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">sync_time</span>(<span class="params">tz, ts</span>):</span><br><span class="line">    ts = get_time()</span><br><span class="line">    to_time = datetime(*ts[:<span class="number">6</span>]) + timedelta(hours=LOCAL_TZ)</span><br><span class="line">    set_time2.set_time(to_time.timetuple())</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    sync_time()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p> 注意: 以上代码未经测试, 可能有错误.</p>
+</li>
+<li><p>如果无法直接连接到提供时间的服务器呢?<br> 比如有两个网络, 一个是测试电脑的内部网, 服务器在测试的通用网络.</p>
+<p> 可以使用一个可以连通两个网络的电脑上作为交换数据的中间人, 具体的是使用文件交换还是像 <code>socket</code> 之类的网络接口服务交换就随你的喜好了.</p>
+</li>
+</ol>
+<p>拙见.</p>
+<!--more-->
+
+        
+            <div id="toc-article">
+                
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>原文链接: <a href="http://lixxu.github.io/2014/06/22/use-python-set-system-time/">http://lixxu.github.io/2014/06/22/use-python-set-system-time/</a></p>
+              <p>版权声明: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>分享到:</span>
+    </div>
+
+
+
+        </div>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2014/06/22/nssm-install-windows-service/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">
+        
+          使用 NSSM 安装 Windows 系统服务
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/07/25/get-coder-story-text-from-web/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          抓取 &lt;&lt;码农故事&gt;&gt; 文本
+        
+      </div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+
+
+
+
+
+
+
+  <div id="comments" class="comments">
+    <script src="https://utteranc.es/client.js"
+        repo="lixxu/lixxu.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+    </script>
+  </div>
+
+
+      
+    </footer>
+  </div>
+</article>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-posts"></i> 最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/01/09/backup-new-hexo-config/">hexo新版本和主题设置备份</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/20/use-utterances-comment/">使用 utterances 作为评论系统</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/07/ignore-pip-upgrade-deprecation/">忽略 pip 在 python2.7 上的废弃警告</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/04/jquery-chosen-css/">jQuery Chosen异常CSS的修复</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/20/add-mengmengda/">添加萌萌哒</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/beautifulsoup/" style="font-size: 10px;">beautifulsoup</a> <a href="/tags/blog/" style="font-size: 13.33px;">blog</a> <a href="/tags/bs4/" style="font-size: 10px;">bs4</a> <a href="/tags/chosen/" style="font-size: 10px;">chosen</a> <a href="/tags/ctypes/" style="font-size: 10px;">ctypes</a> <a href="/tags/database/" style="font-size: 13.33px;">database</a> <a href="/tags/flask/" style="font-size: 10px;">flask</a> <a href="/tags/flask-script/" style="font-size: 10px;">flask-script</a> <a href="/tags/gevent/" style="font-size: 13.33px;">gevent</a> <a href="/tags/git/" style="font-size: 13.33px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/github-blog/" style="font-size: 10px;">github blog</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo-bluelake-readmore-excerpt/" style="font-size: 10px;">hexo bluelake readmore excerpt</a> <a href="/tags/jade/" style="font-size: 10px;">jade</a> <a href="/tags/joke/" style="font-size: 10px;">joke</a> <a href="/tags/jquery/" style="font-size: 10px;">jquery</a> <a href="/tags/marrowmailer/" style="font-size: 10px;">marrowmailer</a> <a href="/tags/nssm/" style="font-size: 10px;">nssm</a> <a href="/tags/octopress/" style="font-size: 16.67px;">octopress</a> <a href="/tags/other/" style="font-size: 10px;">other</a> <a href="/tags/pip/" style="font-size: 13.33px;">pip</a> <a href="/tags/postgresql/" style="font-size: 10px;">postgresql</a> <a href="/tags/psutil/" style="font-size: 10px;">psutil</a> <a href="/tags/pug/" style="font-size: 10px;">pug</a> <a href="/tags/py2exe/" style="font-size: 13.33px;">py2exe</a> <a href="/tags/pyodbc/" style="font-size: 10px;">pyodbc</a> <a href="/tags/pypi/" style="font-size: 10px;">pypi</a> <a href="/tags/python/" style="font-size: 20px;">python</a> <a href="/tags/requests/" style="font-size: 10px;">requests</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/sublime/" style="font-size: 13.33px;">sublime</a> <a href="/tags/thin/" style="font-size: 10px;">thin</a> <a href="/tags/utterances/" style="font-size: 10px;">utterances</a> <a href="/tags/web/" style="font-size: 10px;">web</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-classify"></i> 分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">8</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/editor/">editor</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/joke/">joke</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/other/">other</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/prog/">prog</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web/">web</a><span class="category-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-archive"></i> 归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/">2023年</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019年</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/">2017年</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/">2015年</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/">2014年</a><span class="archive-list-count">21</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-tag"></i> 标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/beautifulsoup/" rel="tag">beautifulsoup</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/" rel="tag">blog</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bs4/" rel="tag">bs4</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/chosen/" rel="tag">chosen</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ctypes/" rel="tag">ctypes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/database/" rel="tag">database</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flask/" rel="tag">flask</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/flask-script/" rel="tag">flask-script</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gevent/" rel="tag">gevent</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github-blog/" rel="tag">github blog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-bluelake-readmore-excerpt/" rel="tag">hexo bluelake readmore excerpt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jade/" rel="tag">jade</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/joke/" rel="tag">joke</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jquery/" rel="tag">jquery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/marrowmailer/" rel="tag">marrowmailer</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nssm/" rel="tag">nssm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/octopress/" rel="tag">octopress</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/other/" rel="tag">other</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/postgresql/" rel="tag">postgresql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/psutil/" rel="tag">psutil</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pug/" rel="tag">pug</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/py2exe/" rel="tag">py2exe</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pyodbc/" rel="tag">pyodbc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pypi/" rel="tag">pypi</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a><span class="tag-list-count">10</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/requests/" rel="tag">requests</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/" rel="tag">sublime</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thin/" rel="tag">thin</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/utterances/" rel="tag">utterances</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web/" rel="tag">web</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/windows/" rel="tag">windows</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <a id="totop" href="#top"></a>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <p>
+        <a href="/sitemap.xml">网站地图</a>
+        <span> | </span><a href="/atom.xml">订阅本站</a>
+        <span> | </span><a href="/about/">联系博主</a>
+      </p>
+      
+      <p>
+        <span>Copyright &copy; 2023 lixxu.</span>
+        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
+        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </div>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/search.json.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+
+  
+    
+<script src="/localshare/js/social-share.js"></script>
+
+    
+<script src="/localshare/js/qrcode.js"></script>
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"width":300,"height":600,"position":"right","hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2}});</script></body>
+</html>
